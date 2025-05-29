@@ -1,0 +1,41 @@
+filename,defect_class
+bitcount.py,missing/added +1
+breadth_first_search.py,incorrect comparison operator
+bucketsort.py,incorrect array slice
+depth_first_search.py,missing condition
+detect_cycle.py,missing base case
+find_first_in_sorted.py,incorrect comparison operator
+find_in_sorted.py,incorrect comparison operator
+flatten.py,incorrect data structure constant
+gcd.py,missing function call
+get_factors.py,missing function call
+hanoi.py,missing condition
+is_valid_parenthesization.py,missing condition
+kheapsort.py,incorrect method called
+knapsack.py,incorrect field dereference
+kth.py,off-by-one
+lcs_length.py,incorrect assignment operator
+levenshtein.py,incorrect assignment operator
+lis.py,missing condition
+longest_common_subsequence.py,missing condition
+max_sublist_sum.py,incorrect comparison operator
+mergesort.py,incorrect comparison operator
+minimum_spanning_tree.py,incorrect comparison operator
+next_palindrome.py,incorrect comparison operator
+next_permutation.py,incorrect comparison operator
+pascal.py,incorrect array slice
+possible_change.py,incorrect assignment operator
+powerset.py,incorrect comparison operator
+quicksort.py,incorrect comparison operator
+reverse_linked_list.py,missing condition
+rpn_eval.py,incorrect operator
+shortest_path_length.py,incorrect comparison operator
+shortest_path_lengths.py,incorrect comparison operator
+shortest_paths.py,incorrect comparison operator
+shunting_yard.py,missing function call
+sieve.py,incorrect comparison operator
+sqrt.py,incorrect data structure constant
+subsequences.py,incorrect assignment operator
+to_base.py,missing function call
+topological_ordering.py,missing function call
+wrap.py,incorrect comparison operator
