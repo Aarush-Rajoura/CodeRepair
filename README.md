@@ -63,3 +63,69 @@ An end-to-end, LLM- and RL-powered pipeline that automatically detects, repairs,
 │   ├── defect_clf.pt             ← (optional) Classifier weights
 │   └── ppo_policy.zip            ← (optional) Trained PPO policy
 └── utils.py                      ← Helper functions (diff, comparison, etc.)
+```
+
+---
+
+## 🔧 Prerequisites:
+
+- `Python 3.8+`
+
+- `pip install -r requirements.txt`
+
+---
+
+## ⚙️ Installation
+
+- **Clone the repo**
+
+```
+git clone https://github.com/yourusername/auto-code-corrector.git
+cd auto-code-corrector
+```
+
+- **Install dependencies**
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+- **Download QuixBugs data**
+  - `Place the Python programs in data/quixbugs/python_programs/ and their test JSON files in data/quixbugs/json_testcases/.`
+
+---
+
+## ▶️ Usage
+
+- **1.Evaluate on QuixBugs**
+  ```
+  python src/evaluate.py
+  ```
+- **2.Train the RL Policy (PPO)**
+  ```
+  python src/train_rl.py
+
+  ```
+
+- **3.Repair a Single File**
+  ```
+  python src/repair_single.py \
+  --code data/quixbugs/python_programs/bitcount.py \
+  --tests data/quixbugs/json_testcases/bitcount.json
+
+  ```
+
+---
+
+## 📋 Configuration
+- `config/classifier_config.json: Hyperparameters for defect classifier training.`
+
+- `src/train_rl.py: Adjust RL hyperparameters (learning rate, batch size, discount factor).`
+
+- `src/tools.py: Path to tester.py and code directories.`
+
+---
+
+## 📜 License
+This project is released under the MIT License.
+
